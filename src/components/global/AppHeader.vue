@@ -71,7 +71,7 @@
             <li class="nav-item d-none d-lg-block ml-lg-4">
               <router-link
                 to="/logIn"
-                target="_blank"
+                target="_self"
                 class="btn btn-neutral btn-icon"
                 ><span class="nav-link-inner--text">Sign In</span></router-link
               >

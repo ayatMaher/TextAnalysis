@@ -15,32 +15,9 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="card bg-secondary shadow border-0">
-              <div class="card-header bg-white pb-5">
-                <div class="text-muted text-center mb-3">
-                  <small>Sign up with</small>
-                </div>
-                <div class="text-center">
-                  <a href="#" class="btn btn-neutral btn-icon mr-4">
-                    <span class="btn-inner--icon">
-                      <img
-                        src="../../public/frontend/img/icons/common/github.svg"
-                      />
-                    </span>
-                    <span class="btn-inner--text">Github</span>
-                  </a>
-                  <a href="#" class="btn btn-neutral btn-icon">
-                    <span class="btn-inner--icon">
-                      <img
-                        src="../../public/frontend/img/icons/common/google.svg"
-                      />
-                    </span>
-                    <span class="btn-inner--text">Google</span>
-                  </a>
-                </div>
-              </div>
               <div class="card-body px-lg-5 py-lg-5">
                 <div class="text-center text-muted mb-4">
-                  <small>Or sign up with credentials</small>
+                  <h2>Sign Up</h2>
                 </div>
                 <form role="form">
                   <div class="form-group">
@@ -83,6 +60,15 @@
                         placeholder="Password"
                         type="password"
                       />
+                    </div>
+
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
+                      </div>
+                      <input class="form-control datepicker" placeholder="Select dateBirth" type="text" value="00/00/2000">
                     </div>
                   </div>
                   <div class="text-muted font-italic">
