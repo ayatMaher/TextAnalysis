@@ -5,11 +5,10 @@
       class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light"
     >
       <div class="container">
-        <router-link to="/" class="navbar-brand mr-lg-5"
-          ><img
-            src="../../../public/frontend/img/brand/white.png"
-            style="width: 200px; height: inherit"
-        /></router-link>
+        <router-link to="/" class="navbar-brand mr-lg-5"><img
+          alt="image"
+          src="../../../public/frontend/img/brand/white.png"
+          style="width: 200px; height: inherit" /></router-link>
 
         <button
           class="navbar-toggler"
@@ -27,10 +26,10 @@
             <div class="row">
               <div class="col-6 collapse-brand">
                 <router-link to="/"
-                  ><img
-                    src="../../../public/frontend/img/brand/blue.png"
-                    style="width: 300px; height: inherit"
-                /></router-link>
+                ><img
+                  alt=""
+                  src="../../../public/frontend/img/brand/blue.png"
+                  style="width: 300px; height: inherit" /></router-link>
               </div>
               <div class="col-6 collapse-close">
                 <button
@@ -56,13 +55,15 @@
               </a>
               <div class="dropdown-menu">
                 <router-link to="/profile" class="dropdown-item"
-                  >Profile</router-link
+                >Profile
+                </router-link
                 >
                 <router-link to="/login" class="dropdown-item"
-                  >Sign In
+                >Sign In
                 </router-link>
                 <router-link to="/register" class="dropdown-item"
-                  >Register</router-link
+                >Register
+                </router-link
                 >
               </div>
             </li>
@@ -73,7 +74,7 @@
                 to="/logIn"
                 target="_self"
                 class="btn btn-neutral btn-icon"
-                ><span class="nav-link-inner--text">Sign In</span></router-link
+              ><span class="nav-link-inner--text">Sign In</span></router-link
               >
             </li>
           </ul>
@@ -84,6 +85,6 @@
 </template>
 <script>
 export default {
-  name: "AppHeader",
+  name: "AppHeader"
 };
 </script>
