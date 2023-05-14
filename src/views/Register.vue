@@ -24,7 +24,7 @@
                     <div class="input-group input-group-alternative mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text"
-                          ><i class="ni ni-hat-3"></i
+                        ><i class="ni ni-hat-3"></i
                         ></span>
                       </div>
                       <input
@@ -38,7 +38,7 @@
                     <div class="input-group input-group-alternative mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text"
-                          ><i class="ni ni-email-83"></i
+                        ><i class="ni ni-email-83"></i
                         ></span>
                       </div>
                       <input
@@ -49,10 +49,24 @@
                     </div>
                   </div>
                   <div class="form-group">
+                    <div class="input-group input-group-alternative mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"
+                        ><i class="ni ni-hat-3"></i
+                        ></span>
+                      </div>
+                      <input
+                        class="form-control"
+                        placeholder="User Name"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
                     <div class="input-group input-group-alternative">
                       <div class="input-group-prepend">
                         <span class="input-group-text"
-                          ><i class="ni ni-lock-circle-open"></i
+                        ><i class="ni ni-lock-circle-open"></i
                         ></span>
                       </div>
                       <input
@@ -68,12 +82,13 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
                       </div>
-                      <input class="form-control datepicker" placeholder="Select dateBirth" type="text" value="00/00/2000">
+                      <input class="form-control datepicker" placeholder="Select dateBirth" type="text"
+                             value="00/00/2000">
                     </div>
                   </div>
                   <div class="text-muted font-italic">
                     <small
-                      >password strength:
+                    >password strength:
                       <span class="text-success font-weight-700">strong</span>
                     </small>
                   </div>
@@ -92,7 +107,7 @@
                           for="customCheckRegister"
                         >
                           <span
-                            >I agree with the
+                          >I agree with the
                             <a href="#">Privacy Policy</a>
                           </span>
                         </label>
@@ -101,9 +116,11 @@
                   </div>
                   <div class="text-center">
                     <router-link to="/" class="text-light"
-                      ><button type="button" class="btn btn-primary mt-4">
+                    >
+                      <button type="button" class="btn btn-primary mt-4">
                         Create account
-                      </button></router-link
+                      </button>
+                    </router-link
                     >
                   </div>
                 </form>
@@ -118,6 +135,6 @@
 
 <script>
 export default {
-  name: "Register",
+  name: "Register"
 };
 </script>
