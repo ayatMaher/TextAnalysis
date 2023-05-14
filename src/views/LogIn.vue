@@ -24,13 +24,13 @@
                     <div class="input-group input-group-alternative">
                       <div class="input-group-prepend">
                         <span class="input-group-text"
-                          ><i class="ni ni-email-83"></i
+                          ><i class="ni ni-hat-3"></i
                         ></span>
                       </div>
                       <input
                         class="form-control"
-                        placeholder="Email"
-                        type="email"
+                        placeholder="User Name"
+                        type="text"
                       />
                     </div>
                   </div>
