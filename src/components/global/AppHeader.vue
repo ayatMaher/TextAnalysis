@@ -1,9 +1,6 @@
 <template>
   <header class="header-global">
-    <nav
-      id="navbar-main"
-      class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light"
-    >
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light">
       <div class="container">
         <router-link to="/" class="navbar-brand mr-lg-5"><img
           alt="image"
@@ -74,7 +71,7 @@
                 to="/logIn"
                 target="_self"
                 class="btn btn-neutral btn-icon"
-              ><span class="nav-link-inner--text">Sign In</span></router-link
+              ><span class="nav-link-inner--text">Sign Out</span></router-link
               >
             </li>
           </ul>

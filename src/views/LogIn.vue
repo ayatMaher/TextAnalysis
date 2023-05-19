@@ -19,7 +19,7 @@
                 <div class="text-center text-muted mb-4">
                   <h2>Sign In</h2>
                 </div>
-                <form role="form">
+                <form role="form" action="/auth/login" method="POST">
                   <div class="form-group mb-3">
                     <div class="input-group input-group-alternative">
                       <div class="input-group-prepend">
@@ -31,6 +31,7 @@
                         class="form-control"
                         placeholder="User Name"
                         type="text"
+                        v-model="User.username"
                       />
                     </div>
                   </div>
@@ -45,6 +46,7 @@
                         class="form-control"
                         placeholder="Password"
                         type="password"
+                        v-model="User.password"
                       />
                     </div>
                   </div>
@@ -61,7 +63,7 @@
                     </label>
                   </div>
                   <div class="text-center">
-                    <button type="button" class="btn btn-primary my-4">
+                    <button type="submit" class="btn btn-primary my-4" @click="logIn">
                       Sign in
                     </button>
                   </div>
@@ -76,8 +78,8 @@
               </div>
               <div class="col-6 text-right">
                 <router-link to="/register" class="text-light"
-                  ><small>Create new account</small></router-link
-                >
+                  ><small>Create new account</small>
+                </router-link>
               </div>
             </div>
           </div>
@@ -88,7 +90,40 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
-  name: "LogIn",
+    name: 'LogIn',
+    data() {
+        return {
+            User: {
+                username: '',
+                password: ''
+            }
+        };
+    },
+    methods: {
+        logIn() {
+            let newUser = {
+                username: this.User.username,
+                password: this.User.password
+            }
+            console.log(newUser);
+            axios.post('http://localhost:5000/authlogIn', newUser)
+                .then((response) => {
+                    console.log("ayat",response)
+                try {
+                    if (response.status === true){
+                        alert("LogIn Succesfully");
+                        this.$router.push({name:'home'})
+                    }else {
+                        alert("LogIn failed");
+                    }
+                }catch (err){
+                        alert("error")
+                }
+                })
+
+        }
+    }
 };
 </script>

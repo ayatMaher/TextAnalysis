@@ -1,16 +1,13 @@
 <template>
-  <AppHeader />
-  <router-view />
-  <AppFooter />
+
+    <router-view/>
+
 </template>
 <script>
 import AppHeader from "@/components/global/AppHeader.vue";
 import AppFooter from "@/components/global/AppFooter.vue";
+
 export default {
-  name: "App",
-  components: {
-    AppHeader,
-    AppFooter,
-  },
+    name: "App",
 };
 </script>
